@@ -55,17 +55,23 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 I am assuming you know how to configure vim, if not the case there are tons of videos on vim configuration and setup (by far my fav guy is [theprimeagen](https://www.youtube.com/c/ThePrimeagen/videos). Alright, its time for goodness, open `nvim`, ignore the errors and do `:PlugInstall`.
 
+Install `coc-clangd` and other coc-extensions, open nvim and do `:CocInstall coc-clangd`, and other language lsp you wish to support.
 
+### LLVM, clangd (LSP for C++)
+clangd understands your C++ code and adds smart features to your editor: code completion, compile errors, go-to-definition and more. (clangd is part of the llvm project so we need to install llvm first)
 
-
-
-install coc-clangd, open nvim and do `:CocInstall coc-clangd`, and other language lsp you wish to support.
-
-
-### Install LLVM, clangd (LSP for C++)
 ```bash
 brew install llvm
 ```
-add `bits/stdc++.h` in the include dir
-inside `/usr/local/include/`
-create a dir `mkdir bits` and copy the stdc++.h file here
+
+Verify that clangd is in the path using `clangd --version`
+
+Other really important thing I like to do is add `bits/stdc++.h` in the include dir, MacOS doesn't have this header by default, never use it inside c++ projects but if you are doing any c++ coding competition its good to have it.
+
+```bash 
+# inside /usr/local/include/
+cd /usr/local/include/
+
+# create a dir bits and copy the stdc++.h file here
+mkdir bits 
+```
