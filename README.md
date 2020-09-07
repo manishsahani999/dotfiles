@@ -1,5 +1,5 @@
-# Hades
-Tooling is hard! and necessary. This is the way I like to configure my system. 
+# Tooling is hard! and necessary
+This is the way I like to configure my system. 
 
 ### Compilers, Language support and MacOS SDK 
 First thing we need to do is get the language support, compilers and stuff. If you on MacOS, the easiest if to download and install `Xcode/Xcode Command Line`. I prefer xcode command line tools because I use `vim` and `vscode` for code editors and rarely need an IDE, and the biggest of all XCode is around 8GB.
