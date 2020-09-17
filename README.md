@@ -1,7 +1,7 @@
 # Tooling is hard! and necessary
 
 This repository presents collection of configuration setup tips and tricks. This article mainly applies to MacOS based systems and if anyone is interested contributing they are most welcome or if want to talk, they can reach me at [rec.manish.sahani@gmail.com](mailto:rec.manish.sahani@gmail.com) 
-
+    
 The flow of this article goes like this 
 - Language Support - Compiler and Interpreters 
 - System Package Manger 
@@ -9,7 +9,7 @@ The flow of this article goes like this
 - Code Editors Configuration 
 - Language Server Protocol
 
-### Language support - Compilers and Interpreters
+## Language support - Compilers and Interpreters
 The first thing in the setup for any type of software development should be getting the language support - installating the compiler, interpreters etc. If you are on MacOS, the easiest way is to download and install `Xcode or Xcode Command Line`. 
 
 I prefer Xcode Command line tools because it is compact(~1GB) and `vim` or `vscode` are enough for most of my work. But if you need a fully featured IDE and other features go ahead with Xcode(~8-10GB).
@@ -21,14 +21,14 @@ xcode-select --install
 
 To verify the installation run `xcode-select -p`, this outputs the installation directory (`/Library/Developer/CommandLineTools`),
 
-### System Package Manger - Homebrew
+## System Package Manger - Homebrew
 The installation of libraries and apps should be simple and automated, [Homebrew - The Missing Package Manager for MacOS](https://brew.sh/) is one popular package manager, the installation is just one command but requires `xcode-select` to be pre-installed (see more at [brew.sh](https://brew.sh/)).
 
 ```bash 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-### Specific Libraries, Tools and other Binaries  
+## Specific Libraries, Tools and other Binaries  
 Although `xcode-select` will provide you most of the libraries and language support, but it maybe the case that it didn't come with the lanugage of your liking (for example Nodejs).
 
 #### JS support - NVM, Nodejs, NPM and Yarn
@@ -73,7 +73,7 @@ php -r "unlink('composer-setup.php');"
 ```
 If you need help with anything related to PHP laravel development you can always ping me, I'd be happy to help.
 
-### Code Editors - Neovim, vscode 
+## Code Editors - Neovim, vscode 
 I prefer `Neovim` for most of my `c++/js/php/python` projects and use `vscode` when I break my neovim's configuration or when working with `jupyter notebooks`, you can install whatever you feel comfortable with, there are tons of code editors out there 
 
 #### Vscode 
@@ -103,8 +103,9 @@ I am assuming you know how to configure vim, if not the case there are tons of v
 
 Install intellisense or autocomplete for languages you used ex - for c/c++ install `coc-clangd` by  doing `:CocInstall coc-clangd` from Normal mode in vim/nvim.
 
-### LSP 
+## LSP 
 LSP are Language Server Protocol - one configuration for all development tools. below is the image taken from [visual studio's doc](https://code.visualstudio.com/api/language-extensions/language-server-extension-guide), this gives and gist about what we are trying to achive. 
+
 ![image](https://code.visualstudio.com/assets/api/language-extensions/language-server-extension-guide/lsp-languages-editors.png)
 
 Intellisense needs LSP for working and if its still not present in your system you may want to install it for the more productivity. 
@@ -121,7 +122,7 @@ brew install llvm
 After this verify that clangd is in the path using `clangd --version`
 
 
-### Development Tools 
+## Development Tools 
 
 This section changes with your requirement and you may want to install apps that you are familar with or those that you use regularly. Following are tools that I use 
 
@@ -134,7 +135,7 @@ brew cask install postman dbngin
 ```
 
 
-### C++ Libs 
+## C++ Libs 
 Other really important thing I like to do is add `bits/stdc++.h` in the include dir, MacOS doesn't have this header by default, never use it inside c++ projects but if you are doing any c++ coding competition its good to have it.
 
 ```bash 
