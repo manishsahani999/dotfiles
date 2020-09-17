@@ -124,9 +124,13 @@ After this verify that clangd is in the path using `clangd --version`
 
 This section changes with your requirement and you may want to install apps that you are familar with or those that you use regularly. Following are tools that I use 
 
-**Postman** -- ```bash brew cask install postman ```
+- **Postman** -- for API testing 
+- **DBnign** -- easier for DB management
+```bash 
+brew cask install postman dbngin
+```
 
-**DBnign**(easier for DB management) -- ```bash brew cask install dbngin ```
+ -- ```bash brew cask install  ```
 
 ### C++ Libs 
 Other really important thing I like to do is add `bits/stdc++.h` in the include dir, MacOS doesn't have this header by default, never use it inside c++ projects but if you are doing any c++ coding competition its good to have it.
