@@ -1,39 +1,40 @@
 # Tooling is hard! and necessary
 
-This repository presents collection of configuration setup tips ans tricks. This article mainly applies to MacOS based systems and if anyone is interested contributing they are most welcome or if want to talk, they can reach me at [rec.manish.sahani@gmail.com](mailto:rec.manish.sahani@gmail.com) 
+This repository presents collection of configuration setup tips and tricks. This article mainly applies to MacOS based systems and if anyone is interested contributing they are most welcome or if want to talk, they can reach me at [rec.manish.sahani@gmail.com](mailto:rec.manish.sahani@gmail.com) 
 
 The flow of this article goes like this 
-- Get Compiler and Language Support 
-- Install System Package Manger 
-- Setup Specific Tools and Libraries 
-- Install and configure Code Editors
-- LSP
+- Language Support - Compiler and Interpreters 
+- System Package Manger 
+- Specific Libraries and tools 
+- Code Editors Configuration 
+- Language Server Protocol
 
-### Compilers, Language support and MacOS SDK 
-First thing we need to do is get the language support, compilers and stuff. If you on MacOS, the easiest way is to download and install `Xcode/Xcode Command Line`. 
+### Language support - Compilers and Interpreters
+The first thing in the setup for any type of software development should be getting the language support - installating the compiler, interpreters etc. If you are on MacOS, the easiest way is to download and install `Xcode or Xcode Command Line`. 
 
-The Xcode Command Line Tools package is a small self-contained package available for download separately from Xcode, this allows us to do command line development in MacOS. It is consists of the MacOS SDK and command-line tools installed at `/Library/Developer/CommandLineTools`.
+I prefer Xcode Command line tools because it is compact(~1GB) and `vim` or `vscode` are enough for most of my work. But if you need a fully featured IDE and other features go ahead with Xcode(~8-10GB).
 
-I prefer xcode command line tools because I use `vim` and `vscode` as code editors and rarely need an IDE, plus it's compact (XCode installation requires around 8-10GB of space). You can install Xcode if you are more comfortable with it.
-
-The installation is simple, just run the following command in the terminal
+`Xcode` can be easily installed form App Store, and for `Xcode command line tools` the installation is also simple, just run the following command in terminal
 ```bash 
 xcode-select --install
 ```
+
 To verify the installation run `xcode-select -p`, this outputs the installation directory (`/Library/Developer/CommandLineTools`),
 
-### Package Manager - Homebrew
-The installation of libraries and apps should be simple and automated, I use [Homebrew - The Missing Package Manager for MacOS](https://brew.sh/) for this. The installation is just one command but requires `xcode-select` to be pre-installed.
+### System Package Manger - Homebrew
+The installation of libraries and apps should be simple and automated, [Homebrew - The Missing Package Manager for MacOS](https://brew.sh/) is one popular package manager, the installation is just one command but requires `xcode-select` to be pre-installed (see more at [brew.sh](https://brew.sh/)).
 
 ```bash 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 ### Specific Libraries, Tools and other Binaries  
-Although `xcode-select` will provide you most of the libraries and language support, but it maybe the case that it didn't come with the lanugage of your liking for example Nodejs.
+Although `xcode-select` will provide you most of the libraries and language support, but it maybe the case that it didn't come with the lanugage of your liking (for example Nodejs).
 
 #### JS support - NVM, Nodejs, NPM and Yarn
-Js is heavily used nowdays, and `nodejs` is the most popular JS runtime. if you are working on a js based project you may need to shift between different version of node which is easily managed by [nvm](https://github.com/nvm-sh/nvm#about). It stands for node version manager, and works with any POSIX-compilant shell(bash, zsh). To install or update nvm, you should run the install script (Get the latest script from [here](https://github.com/nvm-sh/nvm#about)). Following is the cURL command to download and run the install script.
+Js is heavily used nowdays, and `nodejs` is the most popular JS runtime. if you are working on a js based project you may need to shift between different version of node which is easily managed by [nvm](https://github.com/nvm-sh/nvm#about). It stands for node version manager, and works with any POSIX-compilant shell(bash, zsh). To install or update nvm, you should run the install script (Get the latest script from [here](https://github.com/nvm-sh/nvm#about)). 
+
+Following is the cURL command to download and run the install script.
 
 ```bash 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
