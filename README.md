@@ -103,6 +103,9 @@ I am assuming you know how to configure vim, if not the case there are tons of v
 Install intellisense or autocomplete for languages you used ex - for c/c++ install `coc-clangd` by  doing `:CocInstall coc-clangd` from Normal mode in vim/nvim.
 
 ### LSP 
+LSP are Language Server Protocol - one configuration for all development tools. below is the image taken from [visual studio's doc](https://code.visualstudio.com/api/language-extensions/language-server-extension-guide), this gives and gist about what we are trying to achive. 
+![image](https://code.visualstudio.com/assets/api/language-extensions/language-server-extension-guide/lsp-languages-editors.png)
+
 Intellisense needs LSP for working and if its still not present in your system you may want to install it for the more productivity. 
 
 #### LSP for C++ - LLVM, clangd
@@ -119,15 +122,12 @@ After this verify that clangd is in the path using `clangd --version`
 
 ### Development Tools 
 
-#### Postman
-```bash 
-brew cask install postman 
-```
+This section changes with your requirement and you may want to install apps that you are familar with or those that you use regularly. Following are tools that I use 
 
-#### DBnign 
-```bash 
-brew cask install dbngin
-```
+**Postman** -- ```bash brew cask install postman ```
+
+**DBnign**(easier for DB management) -- ```bash brew cask install dbngin ```
+
 ### C++ Libs 
 Other really important thing I like to do is add `bits/stdc++.h` in the include dir, MacOS doesn't have this header by default, never use it inside c++ projects but if you are doing any c++ coding competition its good to have it.
 
