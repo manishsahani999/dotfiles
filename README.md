@@ -8,7 +8,7 @@ This repository is mainly applies to Unix based systems and contributions are mo
     
 ## Tooling is hard! and necessary
 
-I have covered all the configurations in a detailed tutorial, If you like to read more about step by step configuration, please see the docs folder or visit [noexcept.me/dotfiles]().
+I have covered all the configurations in a detailed tutorial, If you like to read more about step by step configuration, please see the docs folder or visit [http://noexcept.me/dotfiles]().
 
 ### Usage 
 
