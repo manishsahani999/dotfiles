@@ -103,7 +103,7 @@ I am assuming you know how to configure vim, if not the case there are tons of v
 
 Install intellisense or autocomplete for languages you used ex - for c/c++ install `coc-clangd` by  doing `:CocInstall coc-clangd` from Normal mode in vim/nvim.
 
-![vim](../static/vim.png)
+![vim](https://raw.githubusercontent.com/manishsahani999/dotfiles/master/static/vim.png)
 
 ## LSP 
 LSP are Language Server Protocol - one configuration for all development tools. below is the image taken from [visual studio's doc](https://code.visualstudio.com/api/language-extensions/language-server-extension-guide), this gives and gist about what we are trying to achive. 
