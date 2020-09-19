@@ -27,6 +27,25 @@ git clone https://github.com/manishsahani999/dotfiles.git
 gh repo clone manishsahani999/dotfiles
 ```
 
+### Detailed Installtion 
+
+See the tutorial under `docs`, and follow the steps (follow only of your need).
+
+### Quick Installation 
+
+The system must support basic languages (has `xcode--select`) and have `brew` installed. If you don't have these things see the `docs` for help. 
+
+```bash
+# Install xcode-select (if not present)
+xcode-select --install
+
+# Install brew (if not present)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)
+
+./setup.sh -l 'php js' -b 'git nvim' -c 'postman'
+
+```
+
 ### Feedback 
 
 Suggestions / Improvements or any other helpful trick is always welcome, please drop a mail at [rec.manish.sahani@gmail.com](mailto:rec.manish.sahani@gmail.com).
