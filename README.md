@@ -10,6 +10,9 @@ This repository is mainly applies to Unix based systems and contributions are mo
 
 I have covered all the configurations in a detailed tutorial, If you like to read more about step by step configuration, please see the docs folder or visit [http://noexcept.me/dotfiles]().
 
+just to show you the gist of what this repository will achieve, below is how the terminal looks after installation. 
+![terminal image](static/terminal.png)
+
 ### Usage 
 
 If you want to give this a try, first fork the repository, **review the files and code** and **remove code that you don't need**. 
@@ -41,9 +44,6 @@ xcode-select --install
 
 # Install brew (if not present)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)
-
-./setup.sh -l 'php js' -b 'git nvim' -c 'postman'
-
 ```
 
 ### Feedback 
