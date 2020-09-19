@@ -10,7 +10,7 @@ This repository is mainly applies to Unix based systems and contributions are mo
 
 I have covered all the configurations in a detailed tutorial, If you like to read more about step by step configuration, please see the docs folder or visit [http://noexcept.me/dotfiles]().
 
-just to show you the gist of what this repository will achieve, below is how the terminal looks after installation. 
+Just to show you the gist of what this repository will achieve, below is how the terminal looks after installation. 
 ![terminal image](static/terminal.png)
 
 ### Usage 
